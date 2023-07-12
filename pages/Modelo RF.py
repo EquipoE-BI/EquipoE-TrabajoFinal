@@ -3,7 +3,7 @@ import warnings
 import streamlit as st
 
 # Librería ML
-from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 
 # Librerías Manipulación de Datos
@@ -17,12 +17,13 @@ plt.style.use("seaborn-darkgrid")
 # Ignorar alertas
 warnings.filterwarnings("ignore")
 
-st.set_page_config(page_title="Regresión Lineal")
+# Título
+st.set_page_config(page_title="Random Forest")
 
-st.markdown("# Modelo Predictivo - Regresión Lineal")
-st.sidebar.header("Regresión Lineal")
+st.markdown("# Modelo Predictivo - Random Forest")
+st.sidebar.header("Random Forest")
 st.write(
-    """En esta página podrás ver cómo funciona el Modelo de Regresión Lineal en la predicción del mercado de valores"""
+    """En esta página se podrá ver cómo funciona el modelo de Random Forest en la predicción del mercado de valores"""
 )
 
 ticker = st.text_input("Etiqueta de cotización", "EA")
@@ -62,8 +63,8 @@ y_train = y[:split]
 X_test = X[split:]
 y_test = y[split:]
 
-# Modelo de Regresión Lineal
-model = LinearRegression()
+# Modelo de Random Forest
+model = RandomForestRegressor(n_estimators=100)
 model.fit(X_train, y_train)
 
 # Predicciones
@@ -102,7 +103,7 @@ st.write(
     """Los retornos acumulativos originales (color rojo) muestran cómo hubieran evolucionado las inversiones si se hubiera mantenido una estrategia de "comprar y mantener" en el mercado sin utilizar ninguna estrategia de trading."""
 )
 st.write(
-    """Los retornos acumulativos de la estrategia (color azul) muestran cómo evolucionan las inversiones utilizando el modelo de regresión para generar señales de compra y venta en el mercado."""
+    """Los retornos acumulativos de la estrategia (color azul) muestran cómo evolucionan las inversiones utilizando el modelo de Random Forest para generar señales de compra y venta en el mercado."""
 )
 st.write(
     """Comparando ambos gráficos, se puede evaluar el desempeño de la estrategia en relación con los retornos originales del mercado. Si los retornos acumulativos de la estrategia superan a los retornos acumulativos originales, se considera que la estrategia ha sido exitosa en generar retornos adicionales. Por otro lado, si los retornos acumulativos de la estrategia son inferiores a los retornos originales, la estrategia puede considerarse menos efectiva en generar ganancias."""

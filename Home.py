@@ -14,16 +14,15 @@ st.markdown(
     # Grupo E - Integrantes:
     | Nombre | Participación|
     |--|--|
-    | Roger Cabrera | Support Vector Machine, Long Short-Term Memory |
+    | Roger Cabrera Silva | Decision Tree, Linear Regression, Random Forest |
+    | Fredi Caballero Leon| K-Nearest Neighbours, Long Short-Term Memory, Support Vector Classifier|
 
-    ### Especificaciones:
-    **Donde muestra las predicciones/los resultados:**
-    - Gráficamente. 
-    - Númericamente los valores de las predicciones (print de dataframe con la predicción o clasificación).
-    
-
-    **Donde el usuario pueda indicar:**
-    - El modelo ejecutar.
-    - La acción o instrumento financiero que quiera analizar.
+    ### Características:
+    - Gráficos con su interpretación. 
+    - Valores de las Predicciones
+    - Ploteo de Precios Reales
+    - 4 modelos diferentes a usar
+    - Cuadro de texto para ingresar la acción
+    - Abarca todo el registro histórico de la acción
 """
 )

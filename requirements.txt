@@ -4,3 +4,5 @@ matplotlib
 numpy
 pandas
 scikit_learn
+keras
+keras-mixed-sequence

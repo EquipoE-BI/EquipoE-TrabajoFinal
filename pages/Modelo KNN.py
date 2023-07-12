@@ -3,7 +3,7 @@ import warnings
 import streamlit as st
 
 # Librería ML
-from sklearn.linear_model import LinearRegression
+from sklearn.neighbors import KNeighborsRegressor
 from sklearn.metrics import mean_squared_error
 
 # Librerías Manipulación de Datos
@@ -17,12 +17,13 @@ plt.style.use("seaborn-darkgrid")
 # Ignorar alertas
 warnings.filterwarnings("ignore")
 
-st.set_page_config(page_title="Regresión Lineal")
+# Título
+st.set_page_config(page_title="KNN")
 
-st.markdown("# Modelo Predictivo - Regresión Lineal")
-st.sidebar.header("Regresión Lineal")
+st.markdown("# Modelo Predictivo - KNN")
+st.sidebar.header("K-Nearest Neighbours")
 st.write(
-    """En esta página podrás ver cómo funciona el Modelo de Regresión Lineal en la predicción del mercado de valores"""
+    """En esta página se podrá ver cómo funciona el modelo de KNN en la predicción del mercado de valores"""
 )
 
 ticker = st.text_input("Etiqueta de cotización", "EA")
@@ -62,8 +63,8 @@ y_train = y[:split]
 X_test = X[split:]
 y_test = y[split:]
 
-# Modelo de Regresión Lineal
-model = LinearRegression()
+# Modelo de regresión de vecinos más cercanos (KNN)
+model = KNeighborsRegressor(n_neighbors=5)
 model.fit(X_train, y_train)
 
 # Predicciones
