@@ -29,7 +29,7 @@ six==1.16.0
 threadpoolctl==3.1.0
 toml==0.10.2
 urllib3==1.26.13
-yfinance==0.1.87
+yfinance==0.2.18
 Quandl==3.7.0
 wordcloud==1.8.2.2
 nltk==3.7
