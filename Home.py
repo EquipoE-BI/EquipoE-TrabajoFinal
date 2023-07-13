@@ -14,8 +14,9 @@ st.markdown(
     # Grupo E - Integrantes:
     | Nombre | Participación|
     |--|--|
-    | Roger Cabrera Silva | Decision Tree, Linear Regression, Random Forest |
+    | Roger Cabrera Silva | Decision Tree, Linear Regression,  |
     | Fredi Caballero Leon| K-Nearest Neighbours, Long Short-Term Memory, Support Vector Classifier|
+    | Leonzardo Chavez Calderón| Random Forest, Support Vector Classifier|
 
     ### Características:
     - Gráficos con su interpretación. 
