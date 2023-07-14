@@ -17,7 +17,7 @@ st.markdown(
     | Roger Omar Cabrera Silva | 19200070 | Decision Tree, Linear Regression |
     | Fredi Alexander Caballero Leon| 18200076 | K-Nearest Neighbours, Long Short-Term Memory|
     | Leonardo Chavez Calderón de la Barca| 19200076 | Random Forest|
-    | Jonathan Hernán Fanola Tarazona| 19200077 |Support Vector Classifier|
+    | Jonathan Hernan Fanola Tarazona| 19200077 |Support Vector Classifier|
 
     ### Características:
     - Gráficos con su interpretación. 
