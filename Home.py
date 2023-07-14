@@ -14,9 +14,10 @@ st.markdown(
     # Grupo E - Integrantes:
     | Nombre | Código | Participación |
     |--|--|--|
-    | Roger Omar Cabrera Silva | 19200070 | Decision Tree, Linear Regression,  |
-    | Fredi Alexander Caballero Leon| 18200076 | K-Nearest Neighbours, Long Short-Term Memory, Support Vector Classifier|
-    | Leonardo Chavez Calderón de la Barca| 19200076 | Random Forest, Support Vector Classifier|
+    | Roger Omar Cabrera Silva | 19200070 | Decision Tree, Linear Regression |
+    | Fredi Alexander Caballero Leon| 18200076 | K-Nearest Neighbours, Long Short-Term Memory|
+    | Leonardo Chavez Calderón de la Barca| 19200076 | Random Forest|
+    | Jonathan Hernán Fanola Tarazona| 19200077 |Support Vector Classifier|
 
     ### Características:
     - Gráficos con su interpretación. 
