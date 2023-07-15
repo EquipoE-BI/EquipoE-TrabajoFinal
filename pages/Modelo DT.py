@@ -72,7 +72,7 @@ train_pred = model.predict(X_train)
 test_pred = model.predict(X_test)
 
 df["Predicted_Close"] = np.concatenate([train_pred, test_pred])
-df["Predicted_Signal"] = np.where(df["Predicted_Close"].shift(-1) > df["Close"], 1, -1)
+df["Predicted_Signal"] = np.where(df["Predicted_Close"].shift(-1) > df["Close"], 1, 1)
 
 # Calcular los retornos diarios
 df["Return"] = df.Close.pct_change()

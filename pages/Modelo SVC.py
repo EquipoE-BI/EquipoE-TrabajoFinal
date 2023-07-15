@@ -47,7 +47,7 @@ X = df[["Open-Close", "High-Low"]]
 X.head()
 
 # Variables objetivas
-y = np.where(df['Close'].shift(-1) > df['Close'], 1, 0)
+y = np.where(df['Close'].shift(-1) > df['Close'], 1, 1)
 
 split_percentage = 0.8
 split = int(split_percentage*len(df))
